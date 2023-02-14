@@ -12,3 +12,23 @@ let add = (a:number, b:number):number => {
 }
 let output:number = add(2, 5);
 console.log(output);
+
+//a function with object as a parameter
+
+interface Mobile {
+    brand: string;
+    color: string;
+    price: number;
+}
+
+let printMobile = (mobile:Mobile):void => {
+    console.log(JSON.stringify(mobile));
+}
+
+let mobileOne:Mobile = {
+    brand: "apple",
+    color: "blue",
+    price: 35000
+}
+
+printMobile(mobileOne);
